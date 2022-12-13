@@ -6,7 +6,9 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.BOLD};
-  font-size: 20px;
+  font-family: ${({ theme }) => theme.fonts.REGULAR};
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
   color: ${({ theme }) => theme.colors.BLACK};
 `;

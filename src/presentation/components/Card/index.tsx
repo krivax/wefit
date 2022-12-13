@@ -1,10 +1,13 @@
 import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { CardContainer, Title, Button, Text, Avatar, CardFooter, CardHeader, CardContent } from "./styles";
+import  Details from "../../flows/repositories/details";
+import { useNavigation } from "@react-navigation/native";
 
 const Card = () => {
+  const navigation = useNavigation();
   return (
-    <CardContainer>
+    <CardContainer onPress={() => navigation.navigate("Details")}>
       <CardHeader>
         <Title>Titulo</Title>
         <Avatar source={{ uri: 'https://avatars.githubusercontent.com/u/41752732?s=40&v=4' }} />

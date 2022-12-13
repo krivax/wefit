@@ -4,7 +4,7 @@ import { Container, Text } from "./styles";
 const Favorites = () => {
   return (
     <Container>
-      <Text>Tela de Favoritos</Text>
+      <Text>Nenhum repositório nos favorios</Text>
     </Container>
   );
 };

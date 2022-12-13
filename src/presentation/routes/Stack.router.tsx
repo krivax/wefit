@@ -19,16 +19,31 @@ export default function StackRouter() {
       <Stack.Screen
         name="Splash"
         component={Splash}
-        options={{ headerShown: false }}
+        options={{ 
+          headerShown: false,
+          headerTitle: '' 
+        }}
       />
       <Stack.Screen
         name="BottomRouter"
         component={BottomRouter}
-        options={{ headerShown: false }}
+        options={{ 
+          headerShown: false,
+          headerTitle: '' 
+        }}
       />
       <Stack.Screen
         name="Details"
         component={Details}
+        options={{ 
+          headerTitle: '',
+          headerBackTitle: " Detalhes",
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#000',
+            borderBottomColor: '#fff'
+          }
+        }}
       />
     </Stack.Navigator>
   );
